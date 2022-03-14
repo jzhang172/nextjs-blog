@@ -50,3 +50,13 @@
   .lightText {
     color: #666;
   }
+
+  .blogTitle1{
+    font-size: 2rem;
+    line-height: 1.3;
+
+    letter-spacing: -0.05rem;
+    margin: 1rem 0;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+  }

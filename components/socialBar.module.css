@@ -1,0 +1,22 @@
+.tile{
+    height:2rem;
+
+    padding:5px;
+    padding-right:0px;
+}
+
+.listGroup{
+    border: 0px;
+    padding-left:0px;
+}
+.listGroupFirst{
+    padding-left:0px;
+}
+
+.listGroupTwitter img{
+    height:2.2rem;
+}
+
+.listGroup:hover{
+    background:black;
+}

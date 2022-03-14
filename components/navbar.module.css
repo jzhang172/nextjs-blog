@@ -1,0 +1,17 @@
+/* .navbarContainer{
+    flex-direction: row-reverse;
+    
+} */
+.link{
+    font-size: .9rem;
+}
+.rightlink{
+    text-align: center;
+    position: relative;
+}
+.searchbar{
+    margin-left:50px;
+}
+.navParent{
+    border-bottom: 1px solid #d5d5d580;
+}

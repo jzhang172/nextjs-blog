@@ -3,13 +3,20 @@ import Image from 'next/image'
 import Head from 'next/head'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import Navbarmain from './navbar'
 
 const name = 'Jason'
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = 'Nexst.js Sample Website'
 
 export default function Layout({children, home}){
     return (
-    <div className={styles.container}>
+<div>
+<Navbarmain>
+          </Navbarmain>
+
+
+    <div className={home? (styles.container):(styles.blogContainer)}>
+
     <Head>
     <link rel="icon" href="/favicon.ico" />
         <meta
@@ -40,13 +47,13 @@ export default function Layout({children, home}){
           </>
         ) : (
           <>
-            <Link href="/">
+            {/* <Link href="/">
               <a>
                 <Image
                   priority
                   src="/images/aaaaa.jpg"
                   className={utilStyles.borderCircle}
-                  height={108}
+                  height={508}
                   width={108}
                   alt={name}
                 />
@@ -56,11 +63,12 @@ export default function Layout({children, home}){
               <Link href="/">
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
-            </h2>
+            </h2> */}
           </>
         )}
       </header>
     <main>{children}</main>
+
     {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
@@ -70,7 +78,7 @@ export default function Layout({children, home}){
     )}
     </div>
 
-
+    </div>
 
     )
 }
