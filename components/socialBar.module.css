@@ -1,5 +1,5 @@
 .tile{
-    height:2rem;
+    height:1.5rem;
 
     padding:5px;
     padding-right:0px;
@@ -14,7 +14,7 @@
 }
 
 .listGroupTwitter img{
-    height:2.2rem;
+    height:1.6rem;
 }
 
 .listGroup:hover{

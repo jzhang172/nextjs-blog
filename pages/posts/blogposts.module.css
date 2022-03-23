@@ -5,8 +5,14 @@
     width:100%;
     background: url("/images/Office.jpg") no-repeat;
     background-size:cover;
+    /* position:fixed; */
 }
+.rightPicImage{
+    height:100%;
+    width:100%;
+    position:fixed;
 
+}
 .blogContainer{
     margin:0px;
     max-width:100%;
@@ -45,14 +51,144 @@ width: 100%;
     bottom:1.5rem;
     margin: 0px 100px;
 }
-.subtitle{
-    font-size:1.2rem;
-    color:white;
-    font-weight: 100;
-}
+
 .imageDesc{
-    font-size: .8rem;
+    font-size: .7rem;
     width: 100%;
   
     margin: 0px 100px;
+    font-family: Roboto;
+    margin-top: -1rem;
+    font-weight: bolder;
+    letter-spacing: .4px;
+}
+.blogNavbar{
+    margin: 0px 100px; 
+    
+}
+.mainArticle{
+    margin: 0px 100px; 
+    font-size:.82rem;
+    line-height:1.3rem;
+}
+.leftSide{
+    padding-right:0px;
+}
+.rightSide{
+    padding-left:0px;
+}
+.mainArticle{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1rem;
+}
+.mainArticle img{
+    height: 300px;
+}
+
+.mainArticle h2{
+    font-size:1.3rem;
+    font-weight: bolder;
+}
+
+.mainArticle h3{
+    display: inline-block;
+    background: #74604b;
+    /* background: #3e3e3e; */
+    font-size: 1rem;
+    position: relative;
+    text-align: center;
+    height: 2.2rem;
+    width: 6rem;
+}
+.mainArticle h3 a{
+    color: white;
+    line-height: 39px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: Roboto;
+    font-size: .8rem;
+}
+.mainArticle h3:hover {
+    background: black;
+}
+.mainArticle h3 a:hover{
+    transition: .5s;
+    text-decoration: none;
+    color: white !important;
+}
+.mainArticle hr{
+    margin: 0.5rem 0px 1rem;
+    color: #666666;
+}
+.relatedDiv{
+    margin: 0px 100px;
+    margin-top:2.5rem;
+}
+
+
+.relatedDiv p{
+    margin-bottom:.5rem;
+ 
+}
+.relatedDiv h2{
+    font-family: Ramaraja !important;
+}
+.relatedDiv p a{
+    font-weight: bolder;
+}
+.relatedDiv p a:hover{
+    
+        text-decoration: underline;
+        text-decoration: none;
+        transition: .5s;
+        color: #000000;
+    }
+.hrtitle{
+    margin-top: 0px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.copyright{
+    margin-left: 100px;
+    margin-top: 70px;
+    font-family: Roboto;
+    font-size: .6rem;
+    color: #b7b7b7;
+    font-weight: bolder;
+}
+
+.relatedDiv p a{
+color:#74604b;
+}
+
+.titleBlock2{
+        position: relative;
+        display: inline-block;
+        height: 1000px;
+        width: 100%;
+
+}
+
+.title2{
+    margin: 0px 100px;
+
+}
+.blogTitle2{
+    font-size: 3rem;
+    line-height: 1;
+    letter-spacing: 0;
+    margin: 1rem 0;
+    font-family: Roboto;
+}
+
+.title2 h1{
+    line-height: 3.5rem;
 }
