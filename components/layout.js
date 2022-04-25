@@ -6,17 +6,14 @@ import Link from 'next/link'
 import Navbarmain from './navbar'
 
 const name = 'Jason'
-export const siteTitle = 'Nexst.js Sample Website'
+export const siteTitle = 'Level Up'
 
 export default function Layout({ children, home }) {
   return (
     <div>
       <Navbarmain></Navbarmain>
 
-
-      <div className={home ? (styles.container) : (styles.blogContainer)}>
-
-        <Head>
+      <Head>
           <link rel="icon" href="/favicon.ico" />
           <meta
             name="description"
@@ -50,7 +47,13 @@ export default function Layout({ children, home }) {
 
           }
         </header>
+        
         <main>{children}</main>
+     
+     
+      <div className={home ? (styles.container) : (styles.blogContainer)}>
+
+
 
         {!home && (
           <div className={styles.backToHome}>
