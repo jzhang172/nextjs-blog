@@ -26,12 +26,7 @@ export default function Home({ allPostsData }) {
 
 
 
-    console.log(allPostsData);
-   const found = allPostsData.find(o => (o.mainArticle === 'Yes' )
-
-   )
-let foundone=found;
-console.log(foundone);
+  const mainArticle = allPostsData.find(o => (o.mainArticle === 'Yes'));
 
 
 
@@ -48,10 +43,10 @@ console.log(foundone);
           <Row>
             <Col>
               <div className={styles.jumbotron}>
-                Main
-    </div>
+                <img src={mainArticle.firstImage} />
+              </div>
               <div className={styles.jumboText}>
-                <h3> </h3>
+                <h3> {mainArticle.title}</h3>
               </div>
 
             </Col>
@@ -60,21 +55,48 @@ console.log(foundone);
 
 
 
-        <section className={utilStyles.headingMd}>
-          <p>Hi, I'm Jason, the current Pokemon Champion</p>
-          <p>
-            (This is a sample website - you’ll be building a site like this on{' '}
-            <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-      </p>
-        </section>
+        <Container>
+          <Row>
+            <Col xs={6}>
+              <div className={styles.latest}>
+                <h2>The Latest</h2>
+              </div>
+              <div className={styles.latestArticle}>
 
-        {/* {allPostsData.find(element=> element ==="ev")
+                {allPostsData.map(({ id, date, title, firstImage }) => (
+                  <div>
 
-return (<div>hi</div>)
-} */}
+                    <a href={`/posts/${id}`} key={id} className={styles.latestArticleBlock}>
+                      <img src={firstImage} />
+                      <div className={styles.blockInfo}>
+                        <h2>{title}</h2>
+                        <small className={utilStyles.lightText}>
+                          <Date dateString={date} />
+                        </small>
+                      </div>
+                    </a>
+                    <br />
+
+                  </div>
 
 
-        <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+                ))}
+
+              </div>
+
+
+
+
+
+            </Col>
+          </Row>
+
+
+        </Container>
+
+
+
+        {/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
           <h2 className={utilStyles.headingLg}>Blog</h2>
           <ul className={utilStyles.list}>
 
@@ -93,7 +115,7 @@ return (<div>hi</div>)
 
             ))}
           </ul>
-        </section>
+        </section> */}
 
 
 

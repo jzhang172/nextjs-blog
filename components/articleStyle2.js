@@ -3,7 +3,7 @@ import blogposts from '../pages/posts/blogposts.module.css'
 import Link from 'next/link'
 import utilStyles from '../styles/utils.module.css'
 import Socialbar from '../components/socialBar'
-
+import Date from '../components/date'
 
 export default function ArticleStyle2({ children, props }) {
 

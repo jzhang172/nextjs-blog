@@ -2,6 +2,7 @@
 
 title: 'BODYg'
 date: '2020-04-01'
+firstImage: '/images/1409542.jpg'
 ---
 
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.

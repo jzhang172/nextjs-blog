@@ -2,4 +2,50 @@
 /*------Index-------*/
 .jumbotron{
     height:500px;
+    max-height: 500px;
+    overflow: hidden;
   }
+
+  .jumboText{
+    position: relative;
+    background: #fff;
+    width: 80%;
+    margin: -40px auto 0;
+    padding: 40px 40px 0;
+    z-index: 10;
+  }
+
+  .jumboText h3{
+    text-align: center;
+    font-family: 'Amiri';
+    font-size: 2.5rem;
+  }
+
+  .latestArticleBlock{
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+    border-top: 1px solid #74604b6e;
+  }
+  .latestArticleBlock img{
+    height: 120px;
+  }
+.latestArticleBlock h2{
+    font-family: Amiri;
+    font-size: 1.2rem;
+}
+.blockInfo{
+    padding: 1rem;
+}
+
+.latest h2{
+    font-size: .8rem;
+    font-family: Roboto;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.latest{
+position:relative;
+}
