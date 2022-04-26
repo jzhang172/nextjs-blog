@@ -1,0 +1,67 @@
+.middle{
+
+    background: url("/images/home colors.jpg") no-repeat;
+    background-size:cover;
+    color: white;
+    position:relative;
+
+}
+.middleOverlay{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background: #74604bb3;
+
+}
+.middleDiv{
+    padding:5rem 5rem;
+    position: relative;
+
+}
+.middle h2{
+    font-family: Playfair Display;
+    letter-spacing: .3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.middle h3{
+    text-align: center;
+    font-family: 'Lora';
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.left{
+    background: url("/images/Office.jpg") no-repeat;
+    background-size:cover;
+    padding:0px;
+}
+.right{
+    background: url("/images/chair.jpg") no-repeat;
+    background-size:cover;
+    padding:0px;
+}
+.field label{
+    font-family:Amiri;
+}
+.subscribeWrap{
+    display:flex;
+    flex-direction: row;
+    align-items: stretch;
+    position: relative;
+}
+
+.input{
+    flex-direction: row;
+    align-items: stretch;
+    position: relative;
+    display: flex;
+    width:100%;
+} 
+.input input{
+    width:100%;
+}

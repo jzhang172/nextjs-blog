@@ -77,3 +77,29 @@
     font-weight: 100;
     font-family: Lora;
   }
+
+  .noLinkStyle{
+    text-decoration: none;
+    color: inherit;
+  }
+  .noLinkStyle:hover{
+    text-decoration:none;
+    color:#74604b;
+  }
+  .noLinkHover:hover{
+    text-decoration: none;
+    color: inherit;
+  }
+  .noLinkHover{
+    text-decoration: none;
+    color: inherit;
+  }
+  .subscribeButton button{
+    background: #74604b;
+    font-family: Roboto;
+    text-transform: capitalize;
+    font-size: .75rem;
+    letter-spacing: .6px;
+    border-radius: 0px;
+    padding: 0.5rem 1rem;
+  }

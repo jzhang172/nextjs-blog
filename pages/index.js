@@ -9,6 +9,8 @@ import styles from '../styles/index.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Date from '../components/date'
 import Navbarmain from '../components/navbar'
+import SubscribeBanner from '../components/subscribeBanner'
+
 
 
 export async function getStaticProps() {
@@ -19,6 +21,9 @@ export async function getStaticProps() {
     }
   }
 }
+
+
+
 
 
 export default function Home({ allPostsData }) {
@@ -42,13 +47,16 @@ export default function Home({ allPostsData }) {
         <Container>
           <Row>
             <Col>
-              <div className={styles.jumbotron}>
-                <img src={mainArticle.firstImage} />
-              </div>
-              <div className={styles.jumboText}>
-                <h3> {mainArticle.title}</h3>
-              </div>
+              <a href={`/posts/${mainArticle.id}`} className={utilStyles["noLinkStyle"] + " " + utilStyles["noLinkHover"]}>
+                <div className={styles.jumbotron}>
 
+                  <img src={mainArticle.firstImage} />
+                </div>
+                <div className={styles.jumboText}>
+                  <h3> {mainArticle.title}</h3>
+                  <h4> {mainArticle.subtitle}</h4>
+                </div>
+              </a>
             </Col>
           </Row>
         </Container>
@@ -63,21 +71,49 @@ export default function Home({ allPostsData }) {
               </div>
               <div className={styles.latestArticle}>
 
-                {allPostsData.map(({ id, date, title, firstImage }) => (
-                  <div>
+                {allPostsData.map(({ id, date, title, firstImage, category, big }) => (
 
-                    <a href={`/posts/${id}`} key={id} className={styles.latestArticleBlock}>
-                      <img src={firstImage} />
-                      <div className={styles.blockInfo}>
-                        <h2>{title}</h2>
-                        <small className={utilStyles.lightText}>
-                          <Date dateString={date} />
-                        </small>
+
+                  big ? (
+                    <div key={id} style={{ background: "url(" + firstImage + ")" }} className={styles.bigLatest} >
+<div className={styles.bigOverlay}></div>
+                      <a href={`/posts/${id}`} key={id} className={styles["latestArticleBlock"] + " " + utilStyles["noLinkStyle"]}>
+                        
+                        <div className={styles.blockInfo}>
+                          <small>{category}</small>
+                          <h2>{title}</h2>
+                          <small className={utilStyles.lightText}>
+                            <Date dateString={date} />
+                          </small>
+
+                        </div>
+                      </a>
+                      <br />
+
+                    </div>
+
+
+                  ) : (
+
+
+                      <div key={id}>
+
+                        <a href={`/posts/${id}`} key={id} className={styles["latestArticleBlock"] + " " + utilStyles["noLinkStyle"]}>
+                          <img src={firstImage} />
+                          <div className={styles.blockInfo}>
+                            <small>{category}</small>
+                            <h2>{title}</h2>
+                            <small className={utilStyles.lightText}>
+                              <Date dateString={date} />
+                            </small>
+
+                          </div>
+                        </a>
+                        <br />
+
                       </div>
-                    </a>
-                    <br />
+                    )
 
-                  </div>
 
 
                 ))}
@@ -93,29 +129,11 @@ export default function Home({ allPostsData }) {
 
 
         </Container>
+        <SubscribeBanner>
+
+        </SubscribeBanner>
 
 
-
-        {/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-          <h2 className={utilStyles.headingLg}>Blog</h2>
-          <ul className={utilStyles.list}>
-
-            {allPostsData.map(({ id, date, title }) => (
-
-              <li className={utilStyles.listItem} key={id}>
-                <Link href={`/posts/${id}`}>
-                  <a>{title}</a>
-                </Link>
-                <br />
-                <small className={utilStyles.lightText}>
-                  <Date dateString={date} />
-                </small>
-              </li>
-
-
-            ))}
-          </ul>
-        </section> */}
 
 
 
