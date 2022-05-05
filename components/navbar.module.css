@@ -1,10 +1,15 @@
-/* .navbarContainer{
-    flex-direction: row-reverse;
+.navbarContainer{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
     
-} */
+}
 .link{
     font-size: .9rem;
-    color: #8f7255 !important;
+    color:black !important;
+    font-family:Lato;
 }
 .rightlink{
     text-align: center;
@@ -15,4 +20,24 @@
 }
 .navParent{
     border-bottom: 1px solid #d5d5d580;
+}
+.customNav{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+}
+.widthFull{
+    width:100%;
+}
+
+
+.open{
+    position:fixed;
+}
+.close{
+    position:relative;
 }

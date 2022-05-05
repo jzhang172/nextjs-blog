@@ -33,21 +33,45 @@
     height: 120px;
   }
 .latestArticleBlock h2{
-    font-family: Amiri;
-    font-size: 1.2rem;
+  font-family: 'Amiri';
+  font-size: 1rem;
+  font-weight: 800;
+}
+.latestArticleBlock small{
+font-size:.8rem;
 }
 .blockInfo{
     padding: 1rem;
 }
 
 .latest h2{
-    font-size: .8rem;
+    font-size: 1rem;
     font-family: Roboto;
     font-weight: 500;
     text-transform: uppercase;
+
+    background-color: #ffffff;
+    display: inline-block;
+    padding: 0 16px 0 0;
+    position: relative;
+
+
 }
 .latest{
 position:relative;
+}
+.latest:before{
+  border-top-color: #74604b6e;
+  top: calc(50% - 6px);
+  border-top: 4px solid #74604b6e;
+  content: " ";
+  height: 0;
+  left: -16px;
+  position: absolute;
+  right: -16px;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .jumboText h4{
@@ -85,4 +109,141 @@ position:relative;
 .bigLatest h2{
   font-size: 2.2rem;
   margin-bottom: 0px;
+}
+
+
+
+
+.heroArticle{
+  margin:0px;
+  max-width:100%;
+  /* height: 100vh; */
+  padding: 2rem 5rem;
+  margin-bottom:5rem;
+
+}
+.heroLeft{
+position:relative;
+}
+.heroLeft img{
+    /* height: 100%; */
+    width: 100%;
+    height: 75vh;
+    /* max-width: 100%; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 3rem;
+}
+.heroRight{
+  display:flex;
+}
+.heroRightWrapper{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+.heroRightWrapper h3{
+  font-size: 6rem;
+  font-family: Amiri;
+}
+.heroRightWrapper h4{
+  font-family: Laro;
+  /* width: 80%; */
+  max-width: 600px;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
+
+.heroRightWrapper button{
+  color: #74604b;
+  font-family: Amiri;
+  border: 0px;
+  border-radius: 0px;
+  font-size: 1.2rem;
+  background: none;
+  border: 1px solid #74604b;
+  padding: 0.7rem 2rem;
+}
+.heroRightWrapper button:hover{
+  background-color: #74604b;
+  border-color: #74604b;
+}
+.heroRightWrapper button:hover a{
+  color:white;
+}
+
+.overflowhidden{
+  overflow:hidden;
+}
+.heroRightWrapper h5{
+
+  font-family: Lato;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.1rem;
+}
+.secondFeatureCards{
+  border: 0px;
+  border-radius: 0px;
+}
+.cardBody{
+  padding-left: 0px;
+}
+.cardTitle{
+  
+font-size: 1.8rem;
+letter-spacing: 1px;
+font-family: Lato;
+font-weight: 900;
+}
+.secondFeatureWrapper{
+  max-width: 100%;
+  margin-bottom:5rem;
+
+}
+.categorySecond{
+  font-family: Lato;
+  font-size: .8rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.secondFeatureCards img{
+  height: 400px;
+  max-width: 100%;
+}
+.cardImage{
+  border-radius:0px;
+}
+.mainButton{
+  text-decoration:none;
+  color: #74604b;
+  transition:.2s;
+}
+.mainButton:hover{
+  text-decoration:none;
+  color:inherit;
+}
+
+.sponsorTitle h2{
+  font-family: Roboto;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.card{
+  display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
 }

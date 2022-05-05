@@ -81,6 +81,7 @@
   .noLinkStyle{
     text-decoration: none;
     color: inherit;
+    transition:.3s;
   }
   .noLinkStyle:hover{
     text-decoration:none;
@@ -102,4 +103,17 @@
     letter-spacing: .6px;
     border-radius: 0px;
     padding: 0.5rem 1rem;
+  }
+  .linkAnimation{
+    transition:.3s
+  }
+  .linkAnimation:hover{
+    opacity:.5;
+  }
+
+  .cardAnimation:hover img{
+    opacity:.5;
+  }
+  .cardAnimation img{
+    transition:.3s;
   }

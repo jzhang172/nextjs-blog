@@ -17,6 +17,7 @@
     "react-icons": "^4.3.1",
     "react-router-dom": "^6.3.0",
     "react-scrollmagic": "^2.3.0",
+    "react-use-scroll-direction": "^0.1.0",
     "remark": "^14.0.2",
     "remark-html": "^15.0.1"
   }

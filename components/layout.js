@@ -4,14 +4,30 @@ import Head from 'next/head'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Navbarmain from './navbar'
+import { Navbar } from 'react-bootstrap'
+import React, { useEffect, useRef, forwardRef } from 'react'
+
 
 const name = 'Jason'
 export const siteTitle = 'Level Up'
 
-export default function Layout({ children, home }) {
+
+export default function Layout({ children, home, giveNavHeight }) {
+
+
+  const pull_data = (data) => {
+
+   const navHeight = data;
+    giveNavHeight(navHeight);
+
+  }
+
+
+
+  
   return (
-    <div>
-      <Navbarmain></Navbarmain>
+    <div className={styles.layoutWrap}>
+      <Navbarmain func={pull_data}></Navbarmain>
 
       <Head>
           <link rel="icon" href="/favicon.ico" />
