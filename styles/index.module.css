@@ -27,29 +27,31 @@
     width: 100%;
     max-width: 100%;
     align-items: center;
-    border-top: 1px solid #74604b6e;
+    border-top: 1px solid #74604b38;
   }
   .latestArticleBlock img{
-    height: 120px;
+    height: 140px;
+    width: 200px;
   }
 .latestArticleBlock h2{
-  font-family: 'Amiri';
+  font-family: Roboto Flex;
   font-size: 1rem;
-  font-weight: 800;
+  font-weight: 600;
+  margin-bottom: 0px;
 }
 .latestArticleBlock small{
 font-size:.8rem;
+font-family: 'Roboto Flex';
 }
 .blockInfo{
     padding: 1rem;
 }
 
 .latest h2{
-    font-size: 1rem;
-    font-family: Roboto;
-    font-weight: 500;
-    text-transform: uppercase;
-
+  font-size: 1.8rem;
+  font-family: Amiri;
+  font-weight: 800;
+  /* text-transform: uppercase;*/
     background-color: #ffffff;
     display: inline-block;
     padding: 0 16px 0 0;
@@ -117,25 +119,26 @@ position:relative;
 .heroArticle{
   margin:0px;
   max-width:100%;
-  /* height: 100vh; */
+  height: 100vh;
   padding: 2rem 5rem;
-  margin-bottom:5rem;
+  /* margin-bottom:5rem; */
 
 }
 .heroLeft{
 position:relative;
+overflow:hidden;
 }
 .heroLeft img{
     /* height: 100%; */
     width: 100%;
-    height: 75vh;
+    height: 100%;
     /* max-width: 100%; */
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    padding-top: 3rem;
+    
 }
 .heroRight{
   display:flex;
@@ -148,6 +151,7 @@ position:relative;
   align-items: center;
   padding: 2rem;
   text-align: center;
+  padding-top:0px;
 }
 .heroRightWrapper h3{
   font-size: 6rem;
@@ -194,31 +198,89 @@ position:relative;
 .secondFeatureCards{
   border: 0px;
   border-radius: 0px;
+  padding: 2rem 3rem;
+
 }
 .cardBody{
-  padding-left: 0px;
+  /* padding-left: 0px; */
+  text-align:center;
 }
 .cardTitle{
   
-font-size: 1.8rem;
-letter-spacing: 1px;
-font-family: Lato;
-font-weight: 900;
+  font-size: 2rem;
+
+  font-family: Amiri;
+}
+.cardBody p{
+  font-size: .9rem;
+  font-family: Roboto;
 }
 .secondFeatureWrapper{
   max-width: 100%;
-  margin-bottom:5rem;
+  /* margin-bottom:5rem; */
 
+  padding-bottom:5rem;
+
+
+
+}
+.lookbookWrapper{
+  text-align: right;
+  /* height: 500px; */
+  display: flex;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 5rem 2rem;
+  background: #6a3232;
+  color: white;
+  margin-bottom: 7rem;
+  background:url('/images/books.jpg');
+  background-size: contain;
+}
+.lookbookName{
+  padding: 2rem;
+}
+.lookbookName h2{
+  font-size: 4rem;
+  font-family: Amiri;
+  text-transform: uppercase;
+  z-index: 1;
+    position: relative;
+}
+.cover{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  background: #341e1e8a;
+}
+.featureTitleWrap::before{
+  top: calc(50% - 13px);
+  border-top: 4px solid #3a352f6e;
+  content: " ";
+  height: 0;
+  left: -16px;
+  position: absolute;
+  right: -16px;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
 .categorySecond{
   font-family: Lato;
   font-size: .8rem;
   font-weight: 900;
   letter-spacing: 1px;
+  color:#74604b9e;
 }
 
 .secondFeatureCards img{
-  height: 400px;
+  height: 600px;
   max-width: 100%;
 }
 .cardImage{
@@ -237,13 +299,68 @@ font-weight: 900;
 .sponsorTitle h2{
   font-family: Roboto;
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .card{
   display: flex;
     flex-flow: row wrap;
     flex-direction: column;
-    align-items: center;
-    align-content: center;
+
+    border:0px;
+}
+.cardBorder{
+  border:0px;
+}
+.card img{
+  height:220px;
+}
+
+
+.secondFeatureCards .cardImageFirst{
+  border-radius:0px;
+  height:800px;
+  width:100%;
+}
+
+.secondFeatureCards .cardImageSecond{
+  border-radius:0px;
+  height:800px;
+  width:100%;
+}
+
+.secondFeatureCardsTop{
+  height:800px;
+}
+
+.secondFeatureCardsTop img{
+  height:100%;
+}
+.secondFeatureCardsFirst{
+  border:0px;
+}
+.secondFeatureCardsSecond{
+border:0px;
+}
+.secondFeatureCardsThird{
+  border:0px;
+}
+.secondFeatureCardsSecond .secondFeatureCardsTop{
+  height:500px;
+}
+.secondFeatureCardsThird .secondFeatureCardsTop{
+  height:300px;
+}
+.featureTitleWrap{
+  position: relative;
+}
+.featureTitle{
+  font-family: Ramaraja;
+  margin: 1rem 0px 2rem;
+  color: black;
+  font-size: 2rem;
+  background-color: #ffffff;
+  display: inline-block;
+  position: relative;
+  padding: 0px 1rem 0px 0px;
 }

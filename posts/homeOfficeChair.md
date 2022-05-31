@@ -1,9 +1,10 @@
 ---
 
-title: 'Two Forms of Pre-rendering'
+title: 'Home Office Chairs and Body Size'
 date: '2020-01-01'
 firstImage: '/images/Office.jpg'
 secondFeature: 'Yes'
+secondFeatureSecond: 'Yes'
 subtitle: 'An example of a second feature and thats not all folks'
 category: 'Office'
 ---

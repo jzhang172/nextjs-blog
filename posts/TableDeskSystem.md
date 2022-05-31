@@ -1,9 +1,12 @@
 ---
 
-title: 'BODYg'
-date: '2020-04-01'
+title: 'The Table and Desk system - A guide to understanding the center piece of a Home office'
+date: '2020-01-01'
 firstImage: '/images/1409542.jpg'
-category: 'Bath'
+secondFeature: 'Yes'
+secondFeatureThird: 'Yes'
+subtitle: 'An example of a second feature and thats not all folks'
+category: 'Office'
 ---
 
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.

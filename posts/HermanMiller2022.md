@@ -1,9 +1,8 @@
 ---
-title: 'BIG EXAMPLE YO'
+
+title: 'Herman Miller News for 2022 - what to look out for'
 date: '2020-04-01'
-firstImage: '/images/chair.jpg'
-secondFeature: 'Yes'
-subtitle: 'An example of a second feature and thats not all folks'
+firstImage: '/images/1409542.jpg'
 category: 'Bath'
 ---
 

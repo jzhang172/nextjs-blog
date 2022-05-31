@@ -1,6 +1,6 @@
 ---
 
-title: 'BIG EXAMPLE YO'
+title: 'HÖGSTEN - the new outdoor armchair'
 big: 'Yes'
 date: '2020-04-01'
 firstImage: '/images/1409542.jpg'

@@ -107,6 +107,7 @@ export default function Navbarmain(props) {
             <Nav.Link href="#features" className={styles.link}>Office</Nav.Link>
             <Nav.Link href="#pricing" className={styles.link}>Bath</Nav.Link>
             <Nav.Link href="#pricing" className={styles.link}>Products</Nav.Link>
+            <Nav.Link href="#pricing" className={styles.link}>Lookbook</Nav.Link>
           </Nav>
         </Navbar>
       </Nav>
